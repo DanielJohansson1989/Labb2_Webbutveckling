@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Labb 2 - CV</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Daniel Johansson</h1>
+            <nav>
+                    <div><a href="./index.html">Home</a></div>
+                    <div class="activ-page"><a href="./cv.html">CV</a></div>
+                    <div><a href="./portfolio.html">Portfolio</a></div>
+                    <div><a href="./contact-details.html">Contact details</a></div>
+                    <div><a href="./miscellaneous.html">Misc.</a></div>
+            </nav>
+        </header>
+        <main class="flex-container">
+            <section class="black-bubble">
+                    <h2>Education</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Name of education</th>
+                                <th>School</th>
+                            </tr>
+                        </thead>
+                        <tbody id="education">
+                        </tbody>
+                    </table>                    
+            </section>
+            <section class="white-bubble">
+                <h2>Work Experience</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Professional title</th>
+                            <th>Company name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="workExperience">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            &copy; Daniel Johansson 2024
+        </footer>
+
+        <script src="./jscript/education.js"></script>
+        <script src="./jscript/workExperience.js"></script>
+    </body>
+</html>

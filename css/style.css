@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+header {
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Borel';
+    font-size: 4em;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+nav div {
+    font-size: large;
+    padding: 1em;
+    margin: 0 1%;
+    color: Black;
+    background-color: white;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+th {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+    padding: 0 0.5em;
+}
+
+td {
+    text-align: left;
+    padding: 1em 0.5em;
+}
+
+dt {
+    margin-top: 1em;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.black-bubble,
+.white-bubble {
+    border-radius: 5%;
+    width: 31.25em;
+    text-align: center;
+    padding: 2em;
+    margin: 2%;
+}
+
+.black-bubble {
+    color: white;
+    background-color: black;
+}
+
+.white-bubble {
+    color: black;
+    background-color: white;
+}
+
+.activ-page {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.projectPic {
+    width: 4em;
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    color: black;
+    font-size: 1.5em;
+    background-color: white;
+    margin: 15% auto;
+    padding: 1.25em;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1,75em;
+    font-weight: bold;
+    margin: 0 0 2em 2em;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myProjects {
+    border-radius: 5%;
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+    margin: 0 25%;
+    background-color: black;
+    color: white;
+}
+
+#contact-details {
+    width: 40%;
+    margin: 0 30%;
+    padding: 2em;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#contact-details li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#profilePic {
+    width: 6em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 850px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 300%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav div {
+        margin: 1%; 
+        border-radius: 5%;
+        width: 50%;
+        text-align: center;
+    }
+
+    button {
+        padding: 2em;
+        font-size: 1em;
+    }
+
+    .black-bubble,
+    .white-bubble {
+    border-radius: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 2em;
+    margin: 2%;
+}
+
+.myProjects {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+#contact-details {
+    width: 90%;
+    margin: 0 5%;
+}
+}
