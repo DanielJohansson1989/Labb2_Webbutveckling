@@ -5,6 +5,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: gray;
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
@@ -152,16 +154,6 @@ dt {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-.myProjects {
-    border-radius: 5%;
-    width: 50%;
-    text-align: center;
-    padding: 2em;
-    margin: 0 25%;
-    background-color: black;
-    color: white;
 }
 
 #contact-details {

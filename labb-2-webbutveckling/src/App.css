@@ -1,0 +1,33 @@
+.myProjects {
+    border-radius: 5%;
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+    margin: 0 25%;
+    background-color: black;
+    color: white;
+}
+
+.myProjects h2 {
+  font-size: 3rem;
+}
+
+.myProjects ul {
+  list-style-type: none;
+}
+
+.myProjects ul li {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1rem .2rem rgba(255, 255, 255, 0.5);
+  padding: .2rem;
+}
+
+.myProjects h3 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.myProjects p {
+  font-size: 1rem;
+}
